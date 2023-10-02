@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './component/Navbar';
+import texto from './component/Textarea';
 
-const [text  , utility ] =  useState("New key")
 
 
 function App() {
-  return (
-    <Navbar title = "text"/>
+  return (<>
+
+  <Navbar title="text" />
+  <texto/>
+
+  </>
+
 
   );
 }
