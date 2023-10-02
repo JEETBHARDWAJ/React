@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 
-export default function texto() {
+export default function TextForm(props) {
+
+    const [text, setText] = useState('Enter text here')
+
+    setText("fiushdfiph")
     return (
-
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px"></textarea>
-            <label for="floatingTextarea2">Comments</label>
-
-            <button className="">CONVERT TO UPPERCASE</button>
+        <div>
+            <h1>{props.heading}</h1>
+            <div>
+                <textarea className="form-control" id="myBox" cols="30" rows="10">Hello</textarea>
+            </div>
+            <button className="btn-primary">Click</button>
         </div>
 
     )
