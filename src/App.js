@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './component/Navbar';
-import texto from './component/Textarea';
+import TextForm from './component/Textarea';
 
 
 
 function App() {
-  return (<>
+  return (
+  <>
 
   <Navbar title="text" />
-  <texto/>
+
+  {/* <TextForm/> */}
 
   </>
 
