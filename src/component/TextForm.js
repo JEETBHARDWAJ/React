@@ -1,26 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function TextForm(props) {
+
+    const [text,setText]  = useState('----------------------------')
+
+
     const upscale  = () => {
-        console.log("The function in working to upscaling the text ")
-        
-        
+        console.log(" Button is Working (upscale) ")
+        let newText = text.toUpperCase()
+        setText(newText)
+    }
+
+
+    const handleOnchange  = (event) => {
+        console.log("Text area function is Working")
+        setText(event.target.value)
 
     }
 
-    const downscale = ()  => {
-        console.log("downscale")
-    }
+
     return (
         <div>
             <h1>{props.heading}</h1>
 
             <div className="mb-3">
                 <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea className="form-control" value={text} onChange={handleOnchange} id="myBox" rows="3"></textarea>
             </div>
+
             <div>
-                <button className="btn btn-primary " onClick={upscale} >Click</button>
+                <button className="btn btn-primary " onClick={upscale} >Click To upscale</button>
             </div>
     
         </div>
