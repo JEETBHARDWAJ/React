@@ -10,7 +10,9 @@ function App() {
   return (
     <>
       <Navbar title="SIH" />
-      <TextForm/>
+      <div className="container">
+      <TextForm heading = "example"/>
+      </div>
     </>
 
 
