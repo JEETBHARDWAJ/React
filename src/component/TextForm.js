@@ -9,6 +9,9 @@ export default function TextForm(props) {
                 <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <div>
+                <button className='btn btn classic '>Click</button>
+            </div>
         </div>
     )
 }
