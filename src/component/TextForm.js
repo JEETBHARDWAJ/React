@@ -1,6 +1,16 @@
 import React from 'react'
 
 export default function TextForm(props) {
+    const upscale  = () => {
+        console.log("The function in working to upscaling the text ")
+        
+        
+
+    }
+
+    const downscale = ()  => {
+        console.log("downscale")
+    }
     return (
         <div>
             <h1>{props.heading}</h1>
@@ -10,8 +20,9 @@ export default function TextForm(props) {
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div>
-                <button className='btn btn classic '>Click</button>
+                <button className="btn btn-primary " onClick={upscale} >Click</button>
             </div>
+    
         </div>
     )
 }
