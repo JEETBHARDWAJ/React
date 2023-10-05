@@ -2,17 +2,35 @@ import React from 'react';
 
 function About() {
     return (
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col-lg-6">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis, urna at tristique malesuada, dui felis lacinia ex, sit amet bibendum orci nisi sit amet nisl. Proin at urna sit amet mauris tincidunt blandit.</p>
-                </div>
-                <div className="col-lg-6">
-                    <img src="Image.jpg" alt="About Us Image" className="img-fluid rounded-circle" />
-                </div>
-            </div>
-        </div>
+        <div className="container">
+        <header>
+            <h1>My Responsive Page</h1>
+        </header>
+        <nav>
+            <ul className="nav">
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Home</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Services</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Welcome to our website</h2>
+            <p>This is a responsive page created using Bootstrap.</p>
+        </section>
+        <footer>
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </footer>
+    </div>
+
     );
 }
 
